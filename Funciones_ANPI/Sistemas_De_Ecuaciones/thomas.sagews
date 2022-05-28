@@ -1,5 +1,7 @@
 ︠b54c959f-0815-4d40-b396-e6d27f41b266s︠
 #Metodo para resolver sistemas de ecuaciones tridiagonales mediante el metodo de thomas
+#Entradas: A sistema de eciaciones, d igualdades del sistema de ecuaciones
+#Salidas: x vector solucion del sistema de ecuaciones
 def thomas(A,d):
     #Se verifica que la matriz sea tridiagonal
     if (A.nrows() != A.ncols() or A.nrows() < 3 or A.ncols() < 3):
