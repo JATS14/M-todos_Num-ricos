@@ -1,4 +1,3 @@
-︠2fa63316-fdb1-42f0-a8b4-b1ff65a70720s︠
 #Metodo iterativo para resolver sistemas de ecuaciones mediante el metodo de la pseudoinversa
 #Entradas: A sistema de ecuaciones, b vector con las igualdades del sistema, itermax numero maximo de iteraciones, tol tolrenacia para el error
 #Salidas: xk vector solucion del sistema, k numero de iteraciones, error
@@ -18,8 +17,6 @@ def pinversa(A, b, itermax, tol):
         xk = xkn #Se actualiza xk
         k += 1
     return [xk, k, error]
-
-︡a68fc279-1e08-4932-b219-269dafcfcf35︡{"done":true}
 
 
 
