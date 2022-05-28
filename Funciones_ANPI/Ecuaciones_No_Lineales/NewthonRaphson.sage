@@ -36,6 +36,10 @@ def newthonRaphson(xn, error, iter_max):
         limit=(raiz[i]-raiz[i-1])/raiz[i] #Calculo de error
         counter+=1
     print('Se llegó al numero de iteraciones máximas %f' %counter)
-    print('Se llegó al error %f' %abs(limit))
-    print('Resultado de aproximación %f' %xn)
+    print('Se llegó al error =', abs(limit).n())
+    print('Resultado de aproximación =', xn.n())
     return xn
+
+#Ejemplo
+print('Prueba\n')
+newthonRaphson(4, 0.0000001, 100)
