@@ -1,4 +1,3 @@
-︠3bcbe23a-8efb-427b-8934-8a7f37e1f99bs︠
 #Sistema de ecuaciones 
 #resultado del planteaminto del problema
 A = matrix([[0.866,0,-0.5,0,0,0],
@@ -36,7 +35,6 @@ def pinversa(A, b, itermax, tol):
 #El sexto valor de xk es V3
 
 pinversa(A,b,500,1*10**-10)
-︡7bd263e2-cbb8-4f79-822f-9caa114e0b15︡{"stdout":"[   -500.022000968043]\n[    433.019052838325]\n[   -866.038105676650]\n[2.08600078751633e-27]\n[    250.011000484021]\n[    749.988999515979]\n"}︡{"done":true}
 
 
 
