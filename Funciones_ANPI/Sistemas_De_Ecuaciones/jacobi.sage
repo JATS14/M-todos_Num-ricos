@@ -62,4 +62,13 @@ b = matrix(QQ, [[6], [7], [6]])
 x0 = matrix(QQ, [[0], [0], [0]])
 iterMax = 1000
 tol = 1e-10
-print(jacobi(A, b, x0, iterMax, tol))
+
+print('--------------<Método de Jacobi>---------------')
+print('A = ', A)
+print('b = ', b)
+print('x = ', x0)
+print('iterMax = ', iterMax)
+print('tol = ', tol)
+print('_______________________________________________________')
+xk, k, error = jacobi(A, b, x0, iterMax, tol)
+print("Aproximación de la solución: \nxk = \n{}\nError = {}\nIteraciones realizadas = {}".format(xk.n(), error.n(), k))
