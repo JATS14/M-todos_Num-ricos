@@ -1,4 +1,3 @@
-︠b54c959f-0815-4d40-b396-e6d27f41b266s︠
 #Metodo para resolver sistemas de ecuaciones tridiagonales mediante el metodo de thomas
 #Entradas: A sistema de eciaciones, d igualdades del sistema de ecuaciones
 #Salidas: x vector solucion del sistema de ecuaciones
@@ -57,10 +56,6 @@ def thomas(A,d):
     x = x[::-1] #Se da vuelta a la lista para tener el orden correcto
     return x
 
-
-
-
-︡92e25837-c386-4f82-a71f-1779ec04ccd1︡{"done":true}
 
 
 
