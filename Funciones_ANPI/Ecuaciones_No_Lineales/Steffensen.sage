@@ -9,14 +9,15 @@ from sage.all import *
 # utilizando la impĺementación del método Steffensen
 
 # Entradas: f -> es la función que se le van a approximar el cero
-#           xk0 -> Es un valor inicial  
+#           xk0 -> Es un valor inicial
+#           tolerancia -> tolerancia acceptada para que acaben las iteraciones
 #           iter_max -> Son la iteraciones máximas para calcular el cero de la funcion 
 # Salidas: iteraciones -> cantidad de iteraciones que se necesitaron para llegar al resultado
 #          Error -> error actual de la approximación
 #          xk -> Resultado de la approximación
 
-def steffensen_aux(f,xk0,tolerancia):
-    error = tol+1   #Error en cada una de las iteraciones del método 
+def steffensen_aux(f,xk0,tolerancia,iter_max):
+    error = tolerancia+1   #Error en cada una de las iteraciones del método 
     n = 1           #Conteo de número de iteraciones del método
     numerador = 0   #Numerador de la división del método iterativo
     denominador = 0 #Denominador de la división del método iterativo
@@ -42,9 +43,9 @@ def f(x):
 
 def steffensen():
     xk0 = 0.7
-    tolerancia = 10**-5
+    tolerancia = 10**-4
     iter_max = 10000
-    xk = steffensen_aux(f,xk0,tolerancia)
+    xk = steffensen_aux(f,xk0,tolerancia,iter_max)
     print("Resultado: %f"%xk)
     #print("evaluación del resultado: %f"%f(-6.549831825767762))
 
